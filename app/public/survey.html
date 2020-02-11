@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Find My Friends Now</title>
+    <link href="reset.css" rel="stylesheet"/>
     <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.4.1/yeti/bootstrap.min.css" rel="stylesheet" integrity="sha384-bWm7zrSUE5E+21rA9qdH5frkMpXvqjQm/WJw4L5PYQLNHrywI5zs5saEjIcCdGu1" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css" />
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
@@ -25,7 +26,7 @@
       </div>
 
       <form>
-        <div class="form-group" id="username">
+        <div class="form-group" id="name">
             <input id="userName" type="text" class="form-control" placeholder="Name">
         </div>
         <div class="form-group" id="userpic">
@@ -34,7 +35,7 @@
         <div class="form-group">
             <label for="question1">I wake up in the same spot and position I fall asleep in.</label>
             <select class="form-control" id="question1">
-                <option <value="empty"></option>
+                <option value="empty"></option>
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -54,7 +55,7 @@
             </select>
         </div>
         <div class="form-group">
-            <label for="question3">I have at least two social media accounts.</label>
+            <label for="question3">I like to brush my teeth after every meal.</label>
             <select class="form-control" id="question3">
                 <option value="empty"></option>
                 <option value="1">1</option>
@@ -65,7 +66,7 @@
             </select>
         </div>
         <div class="form-group">
-            <label for="question4">Money can buy everything including love.</label>
+            <label for="question4">Money can buy everything including relationships.</label>
             <select class="form-control" id="question4">
                 <option value="empty"></option>
                 <option value="1">1</option>
@@ -98,7 +99,7 @@
             </select>
         </div>
         <div class="form-group">
-            <label for="question7">I'd rather hike than stay indoors.</label>
+            <label for="question7">I prefer outdoor activities over indoor events.</label>
             <select class="form-control" id="question7">
                 <option value="empty"></option>
                 <option value="1">1</option>
@@ -109,7 +110,7 @@
             </select>
         </div>
         <div class="form-group">
-            <label for="question8">I really want a Pelaton bike.</label>
+            <label for="question8">I secretly want a Pelaton bike.</label>
             <select class="form-control" id="question8">
                 <option value="empty"></option>
                 <option value="1">1</option>
@@ -120,7 +121,7 @@
             </select>
         </div>
         <div class="form-group">
-            <label for="question9">"Faking it 'til you make it" is better than admitting you'll need to Google it. To your boss.</label>
+            <label for="question9">"Faking it 'til you make it" is better than admitting you'll need to Google it.</label>
             <select class="form-control" id="question9">
                 <option value="empty"></option>
                 <option value="1">1</option>
@@ -131,7 +132,7 @@
             </select>
         </div>
         <div class="form-group">
-            <label for="question10">If you offend me, I'll be passive-aggressive and hack your accounts so I can torture you remotely.</label>
+            <label for="question10">I feel most confident when I am surrounded by a group of friends.</label>
             <select class="form-control" id="question10">
                 <option value="empty"></option>
                 <option value="1">1</option>
@@ -222,8 +223,8 @@ $("#submitButton").on("click", function(event) {
 
         // Ajax call for receiving response after POST req
         $.post(currentURL + "/api/friends", validUser, function(data) {
-            $("#bestMatch").text(data.userName);
-            $("#bestMatchPhoto").attr("src", data.userPhoto);
+            $("#bestMatch").text(data.name);
+            $("#bestMatchPhoto").attr("src", data.photo);
             $(".modal").modal("toggle");
         });
     } else {

@@ -1,3 +1,4 @@
+var path = require("path");
 var friends = require("../data/friends");
 
 module.exports = function(app) {
@@ -5,16 +6,23 @@ module.exports = function(app) {
   app.get("/api/friends", function(req, res) {
     res.json(friends);
   });
-
+  // add new user/friend
   app.post("/api/friends", function(req, res) {
     console.log(req.body.answers);
 
     // Receive user details (name, photo, scores)
     var validUser = req.body;
+    var userAnswer = validUser.answers;
+    var minDiff = 0;
+    var maxDiff = 100;
+
+    var bestMatchName = "";
+    var bestMatchPhoto = "";
+
 
     // parseInt for answers
-    for(var i = 0; i < validUser.answers.length; i++) {
-      validUser.answers[i] = parseInt(validUser.answers[i]);
+    for(var i = 0; i < userAnswer.length; i++) {
+      userAnswer[i] = parseInt(userAnswer[i]);
     }
 
     // default friend match is the first friend but result will be whoever has the minimum difference in scores
@@ -28,10 +36,9 @@ module.exports = function(app) {
     //  whatever the difference is, add to the total difference
     for(var k = 0; k < friends.length; k++) {
       var totalDifference = 0;
-      // "j" is the second friend's answer array we will be comparing the "i" friend's answer array
-      // friends[i].answers.length is the first friend's answer array
+
       for(var j = 0; j < friends[i].answers.length; j++) {
-        var difference = Math.abs(validUser.answers[j] - friends[i].answers[j]);
+        var difference = Math.abs(userAnswer[i] - friends[i].answers[j]);
         // return the order in increasing differences = most compatible(0 difference) to least compatible(++ difference)
         totalDifference += difference;
       }
