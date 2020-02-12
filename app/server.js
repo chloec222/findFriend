@@ -8,15 +8,13 @@ var app = express();
 
 var PORT = process.env.PORT || 8080;
 
-var mysql = require('mysql2');
-
 var connection = mysql.createConnection(
   process.env.JAWSDB_URL || {
-    host: 'd6q8diwwdmy5c9k9.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',
+    host: '',
     port: 3306,
-    user: 'wm5s48p4fafdb7zn',
-    password: '	ho16z9hrr3p7rt42',
-    database: 'mlxfreq15zl4wfdm'
+    user: '',
+    password: '	',
+    database: ''
   }
 );
 
