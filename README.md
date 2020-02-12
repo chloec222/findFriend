@@ -10,7 +10,6 @@ Applications Used:
 
 
 **Find-My-Friends-Now will take in a specific command and render results based on the specified command.**
-### BAMAZON-CUSTOMER
 - input name
 - input profile photo url
 - 10 survey questions based on a scale of 1-5
