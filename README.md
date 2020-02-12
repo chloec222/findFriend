@@ -17,16 +17,16 @@ Applications Used:
 
 
 ### Find-My-Friend-Now | *Home* |
-![Image of home](/images/friendhome.png)
+![Image of home](app/images/friendhome.png)
 
 --------------------------------------------------------------------------------------------------------------------------------------
 
 #### STEP 1: `USER` NAME & PROFILE PIC URL 
-- ![Image of userinput](/images/friend1.png)
+- ![Image of userinput](app/images/friend1.png)
 
 --------------------------------------------------------------------------------------------------------------------------------------
 
 #### STEP 2: `SURVEY` 10 QUESTIONS 
-- ![Image of survey](/images/friend2.png)
+- ![Image of survey](app/images/friend2.png)
 
 --------------------------------------------------------------------------------------------------------------------------------------
