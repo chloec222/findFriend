@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -242,3 +243,248 @@ $("#submitButton").on("click", function(event) {
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 </html>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Find My Friends Now</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.4.1/yeti/bootstrap.min.css" rel="stylesheet" integrity="sha384-bWm7zrSUE5E+21rA9qdH5frkMpXvqjQm/WJw4L5PYQLNHrywI5zs5saEjIcCdGu1" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+
+    <div class="jumbotron jumbotron-fluid">
+        <div id="wrapper">
+        <div class="container">
+          <h1 class="display-4">FIND MY FRIENDS NOW</h1>
+            <h2 id="h2Text">Connect, meet and establish relationships based on similar interests</h2>
+            <p class="jumboText">Take a quick survey by answering 10 questions on a scale of 1 through 5. 
+            </br> <span class="badge badge-pill badge-info">1: DISAGREE</span> to <span class="badge badge-pill badge-info">5: AGREE</span> select a number that most reflects your truth to connect with compatiable friends.</p>
+          </div>
+        </div>
+      </div>
+
+      <form>
+        <div class="form-group" id="username">
+            <input id="userName" type="text" class="form-control" placeholder="Name">
+        </div>
+        <div class="form-group" id="userpic">
+            <input id="userPhoto" type="text" class="form-control" placeholder="URL Link to a Profile Photo">
+        </div>
+        <div class="form-group">
+            <label for="question1">I wake up in the same spot and position I fall asleep in.</label>
+            <select class="form-control" id="question1">
+                <option <value="empty"></option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="question2">I have a thing for condiments.</label>
+            <select class="form-control" id="question2">
+                <option value="empty"></option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="question3">I feel wierd if I don't brush my teeth after every meal.</label>
+            <select class="form-control" id="question3">
+                <option value="empty"></option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="question4">Money can buy everything including relationships.</label>
+            <select class="form-control" id="question4">
+                <option value="empty"></option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="question5">I consider a vegan burger a legitimate burger.</label>
+            <select class="form-control" id="question5">
+                <option value="empty"></option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="question6">I am a sexy beast.</label>
+            <select class="form-control" id="question6">
+                <option value="empty"></option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="question7">I can binge watch Netflix and not feel guilty about it.</label>
+            <select class="form-control" id="question7">
+                <option value="empty"></option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="question8">I secretly really want a Pelaton bike.</label>
+            <select class="form-control" id="question8">
+                <option value="empty"></option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="question9">"Faking it 'til you make it" is better than admitting you'll need to Google it.</label>
+            <select class="form-control" id="question9">
+                <option value="empty"></option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="question10">If you offend me, I'll hack your accounts and torture you remotely.</label>
+            <select class="form-control" id="question10">
+                <option value="empty"></option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </div>
+    </form>
+    <div class="text-center">
+        <button id="submitButton" type="submit" class="btn btn-light btn-lg rounded-pill">Submit</button>
+    </div>
+    
+    <!-- Modal after survey completion -->
+    <div class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Your Best Match</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <h2 id="bestMatch"></h2>
+                <img id="bestMatchPhoto" src="#">
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-info rounded-pill" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+<footer>
+    <div class="container">
+        <a href="/api/friends">Friends API</a>
+        <span>|</span>
+        <a href="https://github.com/chloec222/findfriends">GitHub Repo</a>
+    </div>
+</footer>
+
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+<script type="text/javascript">
+$("#submitButton").on("click", function(event) {
+    // when the submit button is clicked, pass the preventDefault event
+    event.preventDefault();
+
+    // Form validation
+    var valid = true;
+    // if there is no value for userName or userPhoto, the form is not valid
+    if($("#userName").val() === "" || $("#userPhoto").val() === "") {
+        valid = false;
+    // if any of the survey question values are not selected and left at the empty value option, form is not valid
+    } else if($("#question1").val() === "empty" || $("#question2").val() === "empty" || $("#question3").val() === "empty" || $("#question4").val() === "empty" || $("#question5").val() === "empty" || $("#question6").val() === "empty" || $("#question7").val() === "empty" || $("#question8").val() === "empty" || $("#question9").val() === "empty" || $("#question10").val() === "empty") {
+        valid = false;
+    }
+    // these are the conditions that need to be met for a form to be valid
+    if(valid === true) {
+        // validUser object: name & pic properties with survey answers 
+        // val().trim() =>the value and trim white space
+        var validUser = {
+            name: $("#userName").val().trim(),
+            photo: $("#userPhoto").val().trim(),
+            answers: [
+                $("#question1").val(),
+                $("#question2").val(),
+                $("#question3").val(),
+                $("#question4").val(),
+                $("#question5").val(),
+                $("#question6").val(),
+                $("#question7").val(),
+                $("#question8").val(),
+                $("#question9").val(),
+                $("#question10").val()
+            ]
+        };
+
+        var currentURL = window.location.origin;
+
+        // Ajax call for receiving response after POST req
+        $.post(currentURL + "/api/friends", validUser, function(data) {
+            $("#bestMatch").text(data.userName);
+            $("#bestMatchPhoto").attr("src", data.userPhoto);
+            $(".modal").modal("toggle");
+        });
+    } else {
+        // If a required field is missing, show alert
+        alert("Please fill in all required fields!");
+    }
+});
+</script>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
+>>>>>>> 3724a37fd75dcf33c6b9efc82c3d7e5d846cc91d
