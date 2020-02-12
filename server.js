@@ -15,8 +15,8 @@ var connection = mysql.createConnection(
     host: 'localhost',
     port: 3306,
     user: 'root',
-    password: 'Isaacaveryjoshua1!',
-    database: 'todos_db'
+    password: '',
+    database: 'friends_db'
   }
 );
 
