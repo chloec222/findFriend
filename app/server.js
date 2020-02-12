@@ -13,7 +13,7 @@ var connection = mysql.createConnection(
     host: '',
     port: 3306,
     user: '',
-    password: '	',
+    password: '',
     database: ''
   }
 );
