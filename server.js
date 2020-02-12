@@ -12,11 +12,11 @@ var mysql = require('mysql2');
 
 var connection = mysql.createConnection(
   process.env.JAWSDB_URL || {
-    host: 'localhost',
+    host: 'd6q8diwwdmy5c9k9.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',
     port: 3306,
-    user: 'root',
-    password: 'Isaacaveryjoshua1!',
-    database: 'todos_db'
+    user: 'wm5s48p4fafdb7zn',
+    password: '	ho16z9hrr3p7rt42',
+    database: 'mlxfreq15zl4wfdm'
   }
 );
 
