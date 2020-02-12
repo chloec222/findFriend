@@ -7,10 +7,6 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
     "dev": "nodemon server.js"
-<<<<<<< HEAD
-=======
-    
->>>>>>> 3724a37fd75dcf33c6b9efc82c3d7e5d846cc91d
   },
   "author": "Chloe Choi",
   "license": "ISC",
