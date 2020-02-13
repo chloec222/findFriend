@@ -1,5 +1,5 @@
 var path = require("path");
-var friends = require("../data/friends");
+var friends = require("../data/friends.js");
 
 module.exports = function(app) {
   // Return all friends found in friends.js as JSON
@@ -8,7 +8,7 @@ module.exports = function(app) {
   });
   // add new user/friend
   app.post("/api/friends", function(req, res) {
-    console.log(req.body.answers);
+    // console.log(req.body.answers);
 
     // Receive user details (name, photo, scores)
     var validUser = req.body;
@@ -18,18 +18,13 @@ module.exports = function(app) {
 
     var bestMatchName = "";
     var bestMatchPhoto = "";
+    var bestMatchIndex = 0;
 
 
     // parseInt for answers
     for(var i = 0; i < userAnswer.length; i++) {
       userAnswer[i] = parseInt(userAnswer[i]);
     }
-
-    // default friend match is the first friend but result will be whoever has the minimum difference in scores
-    var bestMatchIndex = 0;
-
-    // minimumDifference is 10 because 5-4 =1, and there are 10 questions so 1 *10 = 10
-    var minimumDifference = 10;
 
     // loop through all friends and compare their answers
     // return first the friend comparisons  that have 0 differences = most similar/compatible
@@ -48,10 +43,10 @@ module.exports = function(app) {
       // Math.abs =>absolute disregards +/- positive or negative numbers and just returns absolute whole, numbers
       // so if the validUser and compared friend answers some questions with the same answer then the total difference would be less than 10
       // in that case, return that friend as the best match"i"
-      if(totalDifference < minimumDifference) {
+      if(totalDifference < minDiff) {
         bestMatchIndex = i;
         // reassign the minimumDifference value with the new total Difference value of the most compatible couple
-        minimumDifference = totalDifference;
+        minDiff = totalDifference;
       }
     }
 
