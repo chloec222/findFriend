@@ -1,5 +1,5 @@
 var path = require("path");
-var friends = require("../data/friends.js");
+var friends = require("../data/friends.js.js");
 
 module.exports = function(app) {
   // Return all friends found in friends.js as JSON
