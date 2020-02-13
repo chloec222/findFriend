@@ -6,7 +6,6 @@ Friend-finder is a compatibility-based application -- basically a dating app. Th
 Applications Used:
 - [x] Express
 - [x] Heroku
-- [x] MySql2
 
 
 **Find-My-Friends-Now will take in a specific command and render results based on the specified command.**
