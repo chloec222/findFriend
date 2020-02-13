@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 
 body{
   font-family: 'Montserrat', sans-serif;
@@ -49,10 +49,6 @@ body{
 
 .badge badge-pill badge-info{
   font-size: bolder;
-=======
-
-body{
-  font-family: 'Montserrat', sans-serif;
 }
 
 .jumbotron {
@@ -100,5 +96,4 @@ body{
 
 .badge badge-pill badge-info{
   font-size: bolder;
->>>>>>> 3724a37fd75dcf33c6b9efc82c3d7e5d846cc91d
 }
