@@ -13,11 +13,7 @@ module.exports = function(app) {
     // Receive user details (name, photo, scores)
     var validUser = req.body;
     var userAnswer = validUser.answers;
-    var minDiff = 0;
-    var maxDiff = 100;
-
-    var bestMatchName = "";
-    var bestMatchPhoto = "";
+    var minDiff = 10;
     var bestMatchIndex = 0;
 
 
@@ -32,8 +28,9 @@ module.exports = function(app) {
     for(var k = 0; k < friends.length; k++) {
       var totalDifference = 0;
 
-      for(var j = 0; j < friends[i].answers.length; j++) {
-        var difference = Math.abs(userAnswer[i] - friends[i].answers[j]);
+      for(var j = 0; j < friends[j].answers.length; j++) {
+        var friendsAnswers = friends[j].answers;
+        var difference = Math.abs(userAnswer[i] - friendsAnswers[i]);
         // return the order in increasing differences = most compatible(0 difference) to least compatible(++ difference)
         totalDifference += difference;
       }
