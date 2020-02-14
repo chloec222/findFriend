@@ -7,7 +7,7 @@ Applications Used:
 - [x] Express
 - [x] Heroku
 
-###Find-My-Friends-Now App: https://find-my-friends-now.herokuapp.com/
+### Find-My-Friends-Now App: https://find-my-friends-now.herokuapp.com/
 
 
 **Find-My-Friends-Now will take in a specific command and render results based on the specified command.**
